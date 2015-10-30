@@ -25,11 +25,12 @@ client.get('followers/ids', { screen_name: 'supbutton' }, function (err, data, r
 });
 
 dash.on("detected", function (dash_id) {
-  console.log("sup");
   client.get("users/show", { user_id: random_follower() }, function(err, data, response) {
     if(err) throw err;
     var name = data.screen_name,
         tweet = "@" + name + " Sup";
+
+    console.log(tweet);
 
     client.post('statuses/update', { status: tweet }, function(err, data, response) {
       if(err) console.log(err);
