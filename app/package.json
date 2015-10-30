@@ -1,0 +1,14 @@
+{
+  "name": "Supbutton",
+  "version": "0.0.1",
+  "description": "Sup",
+  "author": "Gordon Diggs",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/GordonDiggs/supbutton.git"
+  },
+  "dependencies": {
+    "node-dash-button": "0.2.5",
+    "twit": "2.1.1"
+  }
+}
